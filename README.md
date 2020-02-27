@@ -7,7 +7,6 @@
 
 ### Set up
 ```bash
-# Running directly from the repository
 docker pull tensorflow/serving
 docker run -t --rm -p 8501:8501 -v "deevio/tmp/efficientnet:/models/efficientnet" -e MODEL_NAME=efficientnet tensorflow/serving
 ```
