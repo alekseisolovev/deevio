@@ -34,7 +34,7 @@ input_data_json = json.dumps(
 SERVER_URL = 'http://localhost:8501/v1/models/efficientnet:predict'
 
 response = requests.post(SERVER_URL, data=input_data_json)
-response.raise_for_status() # raise an exception in case of error
+response.raise_for_status() 
 response = response.json()
 
 y_pred = response["predictions"]
